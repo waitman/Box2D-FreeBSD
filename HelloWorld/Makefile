@@ -42,10 +42,10 @@ EQUALS = =
 CMAKE_EDIT_COMMAND = /usr/local/bin/ccmake
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/da3m0n8t3r/software/box2d/Box2D_v2.2.1
+CMAKE_SOURCE_DIR = /home/da3m0n8t3r/software/box2d/Box2D_v2.2.1/HelloWorld
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/da3m0n8t3r/software/box2d/Box2D_v2.2.1
+CMAKE_BINARY_DIR = /home/da3m0n8t3r/software/box2d/Box2D_v2.2.1/HelloWorld
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -60,47 +60,6 @@ edit_cache:
 edit_cache/fast: edit_cache
 .PHONY : edit_cache/fast
 
-# Special rule for the target install
-install: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/local/bin/cmake -P cmake_install.cmake
-.PHONY : install
-
-# Special rule for the target install
-install/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/local/bin/cmake -P cmake_install.cmake
-.PHONY : install/fast
-
-# Special rule for the target install/local
-install/local: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/usr/local/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local
-
-# Special rule for the target install/local
-install/local/fast: install/local
-.PHONY : install/local/fast
-
-# Special rule for the target install/strip
-install/strip: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/local/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip
-
-# Special rule for the target install/strip
-install/strip/fast: install/strip
-.PHONY : install/strip/fast
-
-# Special rule for the target list_install_components
-list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
-.PHONY : list_install_components
-
-# Special rule for the target list_install_components
-list_install_components/fast: list_install_components
-.PHONY : list_install_components/fast
-
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
@@ -113,14 +72,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/da3m0n8t3r/software/box2d/Box2D_v2.2.1 && $(CMAKE_COMMAND) -E cmake_progress_start /home/da3m0n8t3r/software/box2d/Box2D_v2.2.1/CMakeFiles /home/da3m0n8t3r/software/box2d/Box2D_v2.2.1/HelloWorld/CMakeFiles/progress.marks
-	cd /home/da3m0n8t3r/software/box2d/Box2D_v2.2.1 && $(MAKE) -f CMakeFiles/Makefile2 HelloWorld/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/da3m0n8t3r/software/box2d/Box2D_v2.2.1/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/da3m0n8t3r/software/box2d/Box2D_v2.2.1/HelloWorld/CMakeFiles /home/da3m0n8t3r/software/box2d/Box2D_v2.2.1/HelloWorld/CMakeFiles/progress.marks
+	$(MAKE) -f CMakeFiles/Makefile2 all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/da3m0n8t3r/software/box2d/Box2D_v2.2.1/HelloWorld/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/da3m0n8t3r/software/box2d/Box2D_v2.2.1 && $(MAKE) -f CMakeFiles/Makefile2 HelloWorld/clean
+	$(MAKE) -f CMakeFiles/Makefile2 clean
 .PHONY : clean
 
 # The main clean target
@@ -129,56 +88,46 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/da3m0n8t3r/software/box2d/Box2D_v2.2.1 && $(MAKE) -f CMakeFiles/Makefile2 HelloWorld/preinstall
+	$(MAKE) -f CMakeFiles/Makefile2 preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/da3m0n8t3r/software/box2d/Box2D_v2.2.1 && $(MAKE) -f CMakeFiles/Makefile2 HelloWorld/preinstall
+	$(MAKE) -f CMakeFiles/Makefile2 preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/da3m0n8t3r/software/box2d/Box2D_v2.2.1 && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	$(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-# Convenience name for target.
-HelloWorld/CMakeFiles/HelloWorld.dir/rule:
-	cd /home/da3m0n8t3r/software/box2d/Box2D_v2.2.1 && $(MAKE) -f CMakeFiles/Makefile2 HelloWorld/CMakeFiles/HelloWorld.dir/rule
-.PHONY : HelloWorld/CMakeFiles/HelloWorld.dir/rule
+#=============================================================================
+# Target rules for targets named HelloWorld
 
-# Convenience name for target.
-HelloWorld: HelloWorld/CMakeFiles/HelloWorld.dir/rule
+# Build rule for target.
+HelloWorld: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 HelloWorld
 .PHONY : HelloWorld
 
 # fast build rule for target.
 HelloWorld/fast:
-	cd /home/da3m0n8t3r/software/box2d/Box2D_v2.2.1 && $(MAKE) -f HelloWorld/CMakeFiles/HelloWorld.dir/build.make HelloWorld/CMakeFiles/HelloWorld.dir/build
+	$(MAKE) -f CMakeFiles/HelloWorld.dir/build.make CMakeFiles/HelloWorld.dir/build
 .PHONY : HelloWorld/fast
 
-HelloWorld.o: HelloWorld.cpp.o
+# target to build an object file
+HelloWorld.o:
+	$(MAKE) -f CMakeFiles/HelloWorld.dir/build.make CMakeFiles/HelloWorld.dir/HelloWorld.o
 .PHONY : HelloWorld.o
 
-# target to build an object file
-HelloWorld.cpp.o:
-	cd /home/da3m0n8t3r/software/box2d/Box2D_v2.2.1 && $(MAKE) -f HelloWorld/CMakeFiles/HelloWorld.dir/build.make HelloWorld/CMakeFiles/HelloWorld.dir/HelloWorld.cpp.o
-.PHONY : HelloWorld.cpp.o
-
-HelloWorld.i: HelloWorld.cpp.i
+# target to preprocess a source file
+HelloWorld.i:
+	$(MAKE) -f CMakeFiles/HelloWorld.dir/build.make CMakeFiles/HelloWorld.dir/HelloWorld.i
 .PHONY : HelloWorld.i
 
-# target to preprocess a source file
-HelloWorld.cpp.i:
-	cd /home/da3m0n8t3r/software/box2d/Box2D_v2.2.1 && $(MAKE) -f HelloWorld/CMakeFiles/HelloWorld.dir/build.make HelloWorld/CMakeFiles/HelloWorld.dir/HelloWorld.cpp.i
-.PHONY : HelloWorld.cpp.i
-
-HelloWorld.s: HelloWorld.cpp.s
-.PHONY : HelloWorld.s
-
 # target to generate assembly for a file
-HelloWorld.cpp.s:
-	cd /home/da3m0n8t3r/software/box2d/Box2D_v2.2.1 && $(MAKE) -f HelloWorld/CMakeFiles/HelloWorld.dir/build.make HelloWorld/CMakeFiles/HelloWorld.dir/HelloWorld.cpp.s
-.PHONY : HelloWorld.cpp.s
+HelloWorld.s:
+	$(MAKE) -f CMakeFiles/HelloWorld.dir/build.make CMakeFiles/HelloWorld.dir/HelloWorld.s
+.PHONY : HelloWorld.s
 
 # Help Target
 help:
@@ -188,10 +137,6 @@ help:
 	@echo "... depend"
 	@echo "... HelloWorld"
 	@echo "... edit_cache"
-	@echo "... install"
-	@echo "... install/local"
-	@echo "... install/strip"
-	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... HelloWorld.o"
 	@echo "... HelloWorld.i"
@@ -207,6 +152,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/da3m0n8t3r/software/box2d/Box2D_v2.2.1 && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	$(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

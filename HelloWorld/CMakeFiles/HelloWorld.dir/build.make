@@ -38,69 +38,68 @@ EQUALS = =
 CMAKE_EDIT_COMMAND = /usr/local/bin/ccmake
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/da3m0n8t3r/software/box2d/Box2D_v2.2.1
+CMAKE_SOURCE_DIR = /home/da3m0n8t3r/software/box2d/Box2D_v2.2.1/HelloWorld
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/da3m0n8t3r/software/box2d/Box2D_v2.2.1
+CMAKE_BINARY_DIR = /home/da3m0n8t3r/software/box2d/Box2D_v2.2.1/HelloWorld
 
 # Include any dependencies generated for this target.
-include HelloWorld/CMakeFiles/HelloWorld.dir/depend.make
+include CMakeFiles/HelloWorld.dir/depend.make
 
 # Include the progress variables for this target.
-include HelloWorld/CMakeFiles/HelloWorld.dir/progress.make
+include CMakeFiles/HelloWorld.dir/progress.make
 
 # Include the compile flags for this target's objects.
-include HelloWorld/CMakeFiles/HelloWorld.dir/flags.make
+include CMakeFiles/HelloWorld.dir/flags.make
 
-HelloWorld/CMakeFiles/HelloWorld.dir/HelloWorld.cpp.o: HelloWorld/CMakeFiles/HelloWorld.dir/flags.make
-HelloWorld/CMakeFiles/HelloWorld.dir/HelloWorld.cpp.o: HelloWorld/HelloWorld.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/da3m0n8t3r/software/box2d/Box2D_v2.2.1/CMakeFiles $(CMAKE_PROGRESS_1)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object HelloWorld/CMakeFiles/HelloWorld.dir/HelloWorld.cpp.o"
-	cd /home/da3m0n8t3r/software/box2d/Box2D_v2.2.1/HelloWorld && /usr/bin/CC   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/HelloWorld.dir/HelloWorld.cpp.o -c /home/da3m0n8t3r/software/box2d/Box2D_v2.2.1/HelloWorld/HelloWorld.cpp
+CMakeFiles/HelloWorld.dir/HelloWorld.o: CMakeFiles/HelloWorld.dir/flags.make
+CMakeFiles/HelloWorld.dir/HelloWorld.o: HelloWorld.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/da3m0n8t3r/software/box2d/Box2D_v2.2.1/HelloWorld/CMakeFiles $(CMAKE_PROGRESS_1)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/HelloWorld.dir/HelloWorld.o"
+	clang++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/HelloWorld.dir/HelloWorld.o -c /home/da3m0n8t3r/software/box2d/Box2D_v2.2.1/HelloWorld/HelloWorld.cpp
 
-HelloWorld/CMakeFiles/HelloWorld.dir/HelloWorld.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/HelloWorld.dir/HelloWorld.cpp.i"
-	cd /home/da3m0n8t3r/software/box2d/Box2D_v2.2.1/HelloWorld && /usr/bin/CC  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/da3m0n8t3r/software/box2d/Box2D_v2.2.1/HelloWorld/HelloWorld.cpp > CMakeFiles/HelloWorld.dir/HelloWorld.cpp.i
+CMakeFiles/HelloWorld.dir/HelloWorld.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/HelloWorld.dir/HelloWorld.i"
+	clang++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/da3m0n8t3r/software/box2d/Box2D_v2.2.1/HelloWorld/HelloWorld.cpp > CMakeFiles/HelloWorld.dir/HelloWorld.i
 
-HelloWorld/CMakeFiles/HelloWorld.dir/HelloWorld.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/HelloWorld.dir/HelloWorld.cpp.s"
-	cd /home/da3m0n8t3r/software/box2d/Box2D_v2.2.1/HelloWorld && /usr/bin/CC  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/da3m0n8t3r/software/box2d/Box2D_v2.2.1/HelloWorld/HelloWorld.cpp -o CMakeFiles/HelloWorld.dir/HelloWorld.cpp.s
+CMakeFiles/HelloWorld.dir/HelloWorld.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/HelloWorld.dir/HelloWorld.s"
+	clang++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/da3m0n8t3r/software/box2d/Box2D_v2.2.1/HelloWorld/HelloWorld.cpp -o CMakeFiles/HelloWorld.dir/HelloWorld.s
 
-HelloWorld/CMakeFiles/HelloWorld.dir/HelloWorld.cpp.o.requires:
-.PHONY : HelloWorld/CMakeFiles/HelloWorld.dir/HelloWorld.cpp.o.requires
+CMakeFiles/HelloWorld.dir/HelloWorld.o.requires:
+.PHONY : CMakeFiles/HelloWorld.dir/HelloWorld.o.requires
 
-HelloWorld/CMakeFiles/HelloWorld.dir/HelloWorld.cpp.o.provides: HelloWorld/CMakeFiles/HelloWorld.dir/HelloWorld.cpp.o.requires
-	$(MAKE) -f HelloWorld/CMakeFiles/HelloWorld.dir/build.make HelloWorld/CMakeFiles/HelloWorld.dir/HelloWorld.cpp.o.provides.build
-.PHONY : HelloWorld/CMakeFiles/HelloWorld.dir/HelloWorld.cpp.o.provides
+CMakeFiles/HelloWorld.dir/HelloWorld.o.provides: CMakeFiles/HelloWorld.dir/HelloWorld.o.requires
+	$(MAKE) -f CMakeFiles/HelloWorld.dir/build.make CMakeFiles/HelloWorld.dir/HelloWorld.o.provides.build
+.PHONY : CMakeFiles/HelloWorld.dir/HelloWorld.o.provides
 
-HelloWorld/CMakeFiles/HelloWorld.dir/HelloWorld.cpp.o.provides.build: HelloWorld/CMakeFiles/HelloWorld.dir/HelloWorld.cpp.o
+CMakeFiles/HelloWorld.dir/HelloWorld.o.provides.build: CMakeFiles/HelloWorld.dir/HelloWorld.o
 
 # Object files for target HelloWorld
 HelloWorld_OBJECTS = \
-"CMakeFiles/HelloWorld.dir/HelloWorld.cpp.o"
+"CMakeFiles/HelloWorld.dir/HelloWorld.o"
 
 # External object files for target HelloWorld
 HelloWorld_EXTERNAL_OBJECTS =
 
-HelloWorld/HelloWorld: HelloWorld/CMakeFiles/HelloWorld.dir/HelloWorld.cpp.o
-HelloWorld/HelloWorld: HelloWorld/CMakeFiles/HelloWorld.dir/build.make
-HelloWorld/HelloWorld: Box2D/libBox2D.a
-HelloWorld/HelloWorld: HelloWorld/CMakeFiles/HelloWorld.dir/link.txt
+HelloWorld: CMakeFiles/HelloWorld.dir/HelloWorld.o
+HelloWorld: CMakeFiles/HelloWorld.dir/build.make
+HelloWorld: CMakeFiles/HelloWorld.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX executable HelloWorld"
-	cd /home/da3m0n8t3r/software/box2d/Box2D_v2.2.1/HelloWorld && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/HelloWorld.dir/link.txt --verbose=$(VERBOSE)
+	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/HelloWorld.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-HelloWorld/CMakeFiles/HelloWorld.dir/build: HelloWorld/HelloWorld
-.PHONY : HelloWorld/CMakeFiles/HelloWorld.dir/build
+CMakeFiles/HelloWorld.dir/build: HelloWorld
+.PHONY : CMakeFiles/HelloWorld.dir/build
 
-HelloWorld/CMakeFiles/HelloWorld.dir/requires: HelloWorld/CMakeFiles/HelloWorld.dir/HelloWorld.cpp.o.requires
-.PHONY : HelloWorld/CMakeFiles/HelloWorld.dir/requires
+CMakeFiles/HelloWorld.dir/requires: CMakeFiles/HelloWorld.dir/HelloWorld.o.requires
+.PHONY : CMakeFiles/HelloWorld.dir/requires
 
-HelloWorld/CMakeFiles/HelloWorld.dir/clean:
-	cd /home/da3m0n8t3r/software/box2d/Box2D_v2.2.1/HelloWorld && $(CMAKE_COMMAND) -P CMakeFiles/HelloWorld.dir/cmake_clean.cmake
-.PHONY : HelloWorld/CMakeFiles/HelloWorld.dir/clean
+CMakeFiles/HelloWorld.dir/clean:
+	$(CMAKE_COMMAND) -P CMakeFiles/HelloWorld.dir/cmake_clean.cmake
+.PHONY : CMakeFiles/HelloWorld.dir/clean
 
-HelloWorld/CMakeFiles/HelloWorld.dir/depend:
-	cd /home/da3m0n8t3r/software/box2d/Box2D_v2.2.1 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/da3m0n8t3r/software/box2d/Box2D_v2.2.1 /home/da3m0n8t3r/software/box2d/Box2D_v2.2.1/HelloWorld /home/da3m0n8t3r/software/box2d/Box2D_v2.2.1 /home/da3m0n8t3r/software/box2d/Box2D_v2.2.1/HelloWorld /home/da3m0n8t3r/software/box2d/Box2D_v2.2.1/HelloWorld/CMakeFiles/HelloWorld.dir/DependInfo.cmake --color=$(COLOR)
-.PHONY : HelloWorld/CMakeFiles/HelloWorld.dir/depend
+CMakeFiles/HelloWorld.dir/depend:
+	cd /home/da3m0n8t3r/software/box2d/Box2D_v2.2.1/HelloWorld && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/da3m0n8t3r/software/box2d/Box2D_v2.2.1/HelloWorld /home/da3m0n8t3r/software/box2d/Box2D_v2.2.1/HelloWorld /home/da3m0n8t3r/software/box2d/Box2D_v2.2.1/HelloWorld /home/da3m0n8t3r/software/box2d/Box2D_v2.2.1/HelloWorld /home/da3m0n8t3r/software/box2d/Box2D_v2.2.1/HelloWorld/CMakeFiles/HelloWorld.dir/DependInfo.cmake --color=$(COLOR)
+.PHONY : CMakeFiles/HelloWorld.dir/depend
 

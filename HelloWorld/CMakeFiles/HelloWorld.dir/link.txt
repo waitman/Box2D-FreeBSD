@@ -1,1 +1,1 @@
-/usr/bin/CC       CMakeFiles/HelloWorld.dir/HelloWorld.cpp.o  -o HelloWorld  ../Box2D/libBox2D.a 
+clang++       CMakeFiles/HelloWorld.dir/HelloWorld.o  -o HelloWorld  -L/usr/local/lib  -lBox2D -Wl,-rpath,/usr/local/lib 
